@@ -76,13 +76,13 @@ async function unlock() {
     if (!saved) {
       await saveProtectorPassword(password);
       msg("protectorMessage", "পাসওয়ার্ড সেট হয়েছে।", true);
-      playCustomAudio("./audio/welcome.mp3");
+      playCustomAudio("https://masumbillah6778.github.io/tones/welcome-password.mp3");
     } else if (saved !== password) {
       msg("protectorMessage", "ভুল পাসওয়ার্ড।");
-      playCustomAudio("./audio/wrong-password.mp3");
+      playCustomAudio("https://masumbillah6778.github.io/tones/welcome-password.mp3");
       return;
     } else {
-      playCustomAudio("./audio/welcome.mp3");
+      playCustomAudio("https://masumbillah6778.github.io/tones/welcome-password.mp3");
     }
     hide("protectorSection"); show("appSection"); await loadRecords();
   } catch (e) { msg("protectorMessage", "পাসওয়ার্ড যাচাই করা যায়নি। Firebase Rules/ইন্টারনেট সংযোগ পরীক্ষা করুন।"); console.error(e); }
