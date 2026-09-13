@@ -79,7 +79,7 @@ async function unlock() {
       playCustomAudio("https://masumbillah6778.github.io/tones/welcome-password.mp3");
     } else if (saved !== password) {
       msg("protectorMessage", "ভুল পাসওয়ার্ড।");
-      playCustomAudio("https://masumbillah6778.github.io/tones/welcome-password.mp3");
+      playCustomAudio("https://masumbillah6778.github.io/tones/warning-password.mp3");
       return;
     } else {
       playCustomAudio("https://masumbillah6778.github.io/tones/welcome-password.mp3");
